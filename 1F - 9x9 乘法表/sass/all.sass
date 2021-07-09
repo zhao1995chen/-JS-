@@ -1,0 +1,117 @@
+$font-path: '../fonts'
+
+$primary-color: #2EB738
+$secondary-color: #D8D8D8
+$gray-white: #F0F0F0
+$white: white
+
+@font-face
+  font-family: 'Helvetica Neue'
+  font-weight: normal
+  src: url('#{$font-path}/Helvetica-Neue-2.ttf')
+
+@font-face
+  font-family: '蘋方-繁'
+  src: url('#{$font-path}/PingFang-TC-Regular-2.otf') format("opentype")
+
+@font-face
+  font-family: 'Helvetica Neue'
+  font-weight: bold
+  src: url('#{$font-path}/FreeSansBold.ttf')
+
+h1, h2, p, span
+  color: $primary-color
+  margin: 0
+  font-family: 'Helvetica Neue'
+  font-weight: normal
+
+body
+  margin: 0
+  width: 1280px
+  height: 1372px
+  background-color: $gray-white
+
+.container
+  margin: auto
+  width: 100%
+  max-width: 1110px
+  .row
+    display: flex
+
+.content
+  margin: 80px 0px
+  .container
+    .row
+      flex-flow: wrap
+      justify-content: space-between
+      .rect
+        width: 350px
+        height: 366px
+        &:nth-child(n+4)
+          margin-top: 40px
+      .title
+        display: flex
+        justify-content: space-between
+        .body
+          width: 280px
+          margin: 8.25px 0px
+          border-top: 1px $primary-color solid
+          border-bottom: 1px $primary-color solid
+          display: flex
+          flex-direction: column
+          justify-content: center
+          h1
+            height: 78px
+            font: 56px/84px '蘋方-繁'
+          h2
+            height: 28px
+            font: normal 24px/36px 'Helvetica Neue'
+        .icon
+          width: 14px
+          display: flex
+          flex-direction: column
+          justify-content: space-between
+          div
+            height: 28px
+            text-align: center
+      .number
+        background: $white 0% 0% no-repeat padding-box
+        box-shadow: 0px 3px 10px $secondary-color
+        border-radius: 100px 0px 30px 0px
+        position: relative
+        h1
+          position: absolute
+          height: 153px
+          font: normal normal bold 128px/128px 'Helvetica Neue'
+          text-shadow: 4px 3px 0px $gray-white
+          text-align: center
+          display: inline-block
+          top: 34px
+          left: 61px
+        .container
+          margin: 64px 40px
+          width: auto
+          .row
+            height: 238px
+            flex-flow: column wrap
+            align-content: space-between
+            .exp
+              width: 118px
+              display: flex
+              font: normal normal normal 23px/24px Helvetica Neue;
+              height: 16.66667%
+              justify-content: center
+              flex-direction: column
+              &:first-child
+                margin-top: 118px
+.footer
+  background-color: $primary-color
+  display: flex
+  justify-content: center
+  height: 34px
+  .container
+    h1
+      color: $white
+      font: normal normal normal 16px/24px 'Helvetica Neue'
+      height: 18px
+      text-align: end
