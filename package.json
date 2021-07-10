@@ -1,0 +1,22 @@
+{
+  "name": "javascript_dungeon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhao1995chen/JavascriptDungeon.git"
+  },
+  "author": "Zhao Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhao1995chen/JavascriptDungeon/issues"
+  },
+  "homepage": "https://github.com/zhao1995chen/JavascriptDungeon#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}
