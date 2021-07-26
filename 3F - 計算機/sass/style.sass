@@ -1,0 +1,85 @@
+// @font-face
+//   font-family: 'Roboto'
+//   font-weight: light
+//   src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap')
+
+// @font-face
+//   font-family: 'Roboto'
+//   font-weight: regular
+//   src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap')
+
+// @font-face
+//   font-family: 'Roboto'
+//   font-weight: medium
+//   src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap')
+
+$mainpage-backeground-color: #E8E8E8
+$calculator-background-color: #041936
+$calculator-shadow-color: #00000066
+$text-color-primary: #FFFFFF
+$text-color-secondary: #00C4FF
+$button-background-color: #062145
+$gradual-color-primary: #6C00FF
+$gradual-color-secondary: #00C4FF
+
+body
+  height: 100vh
+  background-color: $mainpage-backeground-color
+div, button
+  color: $text-color-primary
+
+.row, .col-3, .col-4, .col-6, .col-12
+  margin: 0
+  padding: 0
+
+.calculator
+  width: 350px
+  height: 525px
+  padding: 0
+  background-color: $calculator-background-color
+  box-shadow: 0px 20px 40px $calculator-shadow-color
+  border-radius: 20px
+  opacity: 1
+  .results
+    padding: 16px 16px 8px 16px
+    .details
+      color: $text-color-secondary
+      font: normal normal normal 16px/16px Roboto
+      height: 19px
+      line-height: 19px
+    .result
+      font-size: 56px
+      font: normal normal normal 56px/56px Roboto
+      height: 66px
+      line-height: 66px
+  .compute
+    background-color: $button-background-color
+    padding: 16px
+    border-bottom-left-radius: 20px
+    border-bottom-right-radius: 20px
+    .operator
+      font: normal normal 300 24px/28px Roboto
+    .operand
+      border: none
+      font: normal normal medium 24px/28px Roboto
+      background: $calculator-background-color 0% 0% no-repeat padding-box
+    .operate
+      color: $text-color-secondary
+      font: normal normal medium 24px/28px Roboto
+    .operator:nth-child(n), .operand
+      margin-bottom: 16px
+    .operator, .operate, .equal
+      border: none
+      background: none
+    .opreator, .operand, .operate
+      width: 72px
+      height: 64px
+      opacity: 1
+    .equal
+      width: 155px
+      background: transparent linear-gradient(90deg, $gradual-color-secondary 0%, $gradual-color-primary 100%) 0% 0% no-repeat padding-box
+      padding-right: 30px
+      font: normal normal medium 24px/28px Roboto
+      text-align: right
+    .operand, .equal
+      border-radius: 16px
